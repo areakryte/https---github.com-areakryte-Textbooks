@@ -1,0 +1,12 @@
+<div *ngIf="chapter">
+ 
+  <h2>{{chapter.Title}} Contents</h2>
+  <div><span>Chapter </span>{{chapter.chapterNumber}}: {{chapter.chapterTitle}}</div>
+  <div>
+    <label>{{chapter.chapterSubtitle}}</label>
+    <!-- <label>Section:
+      <input [(ngModel)]="chapter.Title" placeholder="1">
+    </label> -->
+  </div>
+  <button (click)="goBack()">Go Back</button>
+</div>

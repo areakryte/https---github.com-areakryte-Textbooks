@@ -1,0 +1,19 @@
+<h2>Linear Algebra Chapters</h2>
+
+<!-- <ul class="chapters">
+  <li *ngFor="let chapter of chapters"
+    [class.selected]="chapter === selectedChapter"
+    (click)="onSelect(chapter)">
+    <span class="badge">{{ chapter.chapterNumber }}.</span>  {{ chapter.chapterTitle }}
+  </li>
+</ul> -->
+
+<ul class="chapters">
+    <li *ngFor="let chapter of chapters">
+      <a routerLink="/detail/{{chapter.chapterNumber}}">
+        <span class="badge">{{chapter.chapterNumber}}</span> {{chapter.chapterTitle}}
+      </a>
+  </li>
+</ul>
+ 
+<!-- <app-chapter-details [chapter]="selectedChapter"></app-chapter-details> -->
